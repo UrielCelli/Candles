@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    grid-area: header;
+}
+
+.grids{
+    display: grid;
+    grid-template-areas: "header header header"
+    "body body nav"
+    "footer footer footer";
+    grid-template-columns: 35vw 35vw 23vw;
+    grid-template-rows: 27vh 120vh 21vh;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'Satisfy', cursive;
+}
+
+.banner{
+    position: relative;
+}
+
+.banner__title{
+    position: absolute;
+    margin: 6vw;
+    color: #6a3636;
+    bottom: -3vh;
+    left: 2vw;
+}
+
+.img__banner{
+    width: 87vw;
+    height: 17vh;
+    margin-top: 2vh;
+    margin-left: 6vw;
+}
+
+.header__downhead{
+    grid-area: header;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin-left: 3vw;
+    list-style-type: none;
+}
+
+.downhead__vinculos{
+    padding: 1vw;
+}
+
+.header__overhead{
+    grid-area: header;
+    
+}
+
+.nav{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK-lmO-HbyUKPVj_9daF9WtPvIwvjf8kI_VA&usqp=CAU);
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-left-style: outset;
+}
+
+.Publicidad{
+    width: 22vw;
+    height: 14vh;
+}
+
+.body{
+    overflow: hidden;
+    margin-left: 6vw;
+    padding-top: 1vh;
+    padding-left: 3vw;
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK-lmO-HbyUKPVj_9daF9WtPvIwvjf8kI_VA&usqp=CAU);
+    grid-area: body;
+}
+
+.img__body{
+    width: 59vw;
+    height: 20vh;
+}
+.footer{
+    color: white;
+    grid-area: footer;
+    padding-top: 3vh;
+    font-family: initial;
+    margin-left: 6vw ;
+    background-color: #000000;
+}
+
+.footer__form{
+    margin: 2vw;
+    font-size: 2vh;
+}
+
+.checkbox{
+}
+
+
+.background{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoN1TyiaYlrfNvfMNfnx5Tay8oqQGnxKoJHw&usqp=CAU);
+}
+
+@media (min-width: 425px){
+    .grids{
+        grid-template-columns: 35vw 33vw 23vw;
+    }
+    .img__banner{
+        width: 85vw;
+    }
+}
+
+@media (min-width: 768px){
+    .img__banner{
+      width: 56vw;
+      height: 18vh;
+      margin-top: 2vh;
+      margin-left: 6vw;
+      }
+      .banner__title{
+        bottom: -8vh;
+      }
+      
+      .header{
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      
+      .Publicidad{
+      width: 22vw;
+      height: 28vh;}
+
+      .img__body {
+        width: 45vw;
+            height: 34vh;
+}
+       .grids{
+           font-size: 1.3rem;
+       } 
+
+}
+
+@media (min-width: 1440px){
+
+    .banner__title{
+        top: 1vh;
+    }
+    .grids{
+        font-size: 2rem;
+    }
+    }
