@@ -55,7 +55,8 @@
     font-weight: 600;
     border-style: double;
     border-color: #553d2a;
-    transition: .3s ease-out all;
+    transition: 1.3s ease-out all;
+    background-color: wheat;
 
 }
 
