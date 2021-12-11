@@ -36,6 +36,9 @@
     height: 17vh;
     margin-top: 2vh;
     margin-left: 6vw;
+    border: #553d2a;
+    border-style: outset;
+    border-width: thick;
 }
 
 .header__downhead{
@@ -48,6 +51,11 @@
 
 .downhead__vinculos{
     padding: 1vw;
+    color: #221409;
+    font-weight: 600;
+    border-style: double;
+    border-color: #553d2a;
+    transition: .3s ease-out all;
 }
 
 .header__overhead{
@@ -62,10 +70,16 @@
     flex-direction: column;
     justify-content: space-evenly;
     border-left-style: outset;
+    border: #553d2a;
+    border-top-style: outset;
+    border-right-style: outset;
+    border-width: thick;
+    border-left-style: outset;
+    border-left-color: #0000008a;
 }
 
 .Publicidad{
-    width: 22vw;
+    width: 20vw;
     height: 14vh;
 }
 
@@ -76,6 +90,10 @@
     padding-left: 3vw;
     background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK-lmO-HbyUKPVj_9daF9WtPvIwvjf8kI_VA&usqp=CAU);
     grid-area: body;
+    border: #553d2a;
+    border-top-style: outset;
+    border-left-style:outset;
+    border-width: thick;
 }
 
 .img__body{
@@ -101,8 +119,7 @@
 
 
 .background{
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoN1TyiaYlrfNvfMNfnx5Tay8oqQGnxKoJHw&usqp=CAU);
-}
+    background-image: linear-gradient(to bottom, #fff9e1, #ab9680);}
 
 @media (min-width: 425px){
     .grids{
